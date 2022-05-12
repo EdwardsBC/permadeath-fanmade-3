@@ -1,0 +1,17 @@
+morir=     Age:0s,PickupDelay:40s
+Dropear=   Age:0s,PickupDelay:40s
+Picar=     Age:0s,PickupDelay:10s
+PickupDelay:32767s
+Age:-32768s
+summon minecraft:item ~ ~ ~ {Tags:["x"],Item:{id:"minecraft:stone",Count:1b}}
+summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["x"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}
+
+
+tellraw @a {"text":"","color":""}
+tellraw @a {"score":{"name":"","objective":""},"color":""}
+tellraw @s {"text":"","color":"","clickEvent":{"action":"run_command","value":""}}
+tellraw @s {"text":"","color":"","clickEvent":{"action":"suggest_command","value":""}}
+
+give @p stone{"display":{"Name":"[{\"text\":\"x\",\"italic\":false,\"color\":\"x\"}]","Lore":["{\"text\":\"x\",\"italic\":false,\"color\":\"x\"}"]}}
+give @p stone{"display":{"Name":"[{\"text\":\"x\",\"italic\":false,\"color\":\"x\"}]","Lore":[]}}
+"{\"text\":\"x\",\"italic\":false,\"color\":\"x\"}"
